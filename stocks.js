@@ -16,8 +16,6 @@ function maxProfit(A){
         // If no profit made, return -1.
         return -1;
     }
-
 }
 
 module.exports = maxProfit;
-
