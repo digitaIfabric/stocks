@@ -9,7 +9,15 @@ function maxProfit(A){
         return maxProfit(A.slice(1));
     }
     // If index is not before min value, return profit
-    return maxValue - minValue;
+    var profit = maxValue - minValue;
+    if (profit > 0){
+        return profit;
+    } else if (profit <= 0){
+        // If no profit made, return -1.
+        return -1;
+    }
+
 }
 
 module.exports = maxProfit;
+
